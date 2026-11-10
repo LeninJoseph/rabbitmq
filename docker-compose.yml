@@ -1,0 +1,6 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"     # AMQP (your code connects here)
+      - "15672:15672"   # Management UI: http://localhost:15672 (guest/guest)
